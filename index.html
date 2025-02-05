@@ -4,9 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <style>
+        img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 230px;
+            transition: transform 0.3s ease;
+        }
+
+        body { 
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            height: 100%;
+            overflow-y: scroll;
+            padding-bottom: 100px;
+            background-color: black;
+            color: white;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        p {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        h1 {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .text1 {  
+            position: absolute;
+            top: 240px; 
+            left: 20px; 
+            transition: transform 0.3s ease;
+        }
+
+        .text2 {
+            position: absolute;
+            top: 290px; 
+            left: 20px; 
+            transition: transform 0.3s ease;
+        }
+
+        .gallery {
+            position: absolute;
+            top: 340px; 
+            left: 20px; 
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: #45a049;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #45a049;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #45a049;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        a:active {
+            background-color: #388e3c;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
-    <p>Hello! I'm Wacky Ramayla, and this is my personal portfolio.</p>
-    <p><a href="about.html">About</a></p>
+    <h1>Hello! I'm Wacky Ramayla, and this is my personal portfolio.</h1>
+
+    <p class="text1"><a href="about.html">About Me</a></p> 
+    <p class="text2"><a href="gallery.html">Gallery</a></p> 
+    <img src="wak.jpg" height="400" /> 
+
 </body>
 </html>
